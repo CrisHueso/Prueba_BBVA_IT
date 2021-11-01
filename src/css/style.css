@@ -1,0 +1,155 @@
+/**
+ * File: style.css
+ * 
+ * Author: Critina Hueso Corpas
+ * 
+ * Date: 11/01/2021
+ * 
+ * Description: css file where I define the styles to use
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap');
+
+:root {
+	--gradient: linear-gradient( 135deg, #72EDF2 10%, #5151E5 100%);
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	line-height: 1.25em;
+}
+
+body {
+	padding: 5%;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #343d4b;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.titleSection {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.weather-today {
+	width: 100%;
+}
+
+.weather-today-details {
+	width: 40%;
+	text-align: center;
+	float: left;
+	border: 1px solid #ccc!important;
+	border-radius: 50px;
+	margin: 5%;
+	padding: 2%;
+}
+.weather-today-details small, .weather-today-details div{
+	width: 100%;
+	float: left;
+	margin-bottom: 3%;
+}
+
+.weather-today-details div{
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+
+.weather-today-details div small{
+	width: 50%;
+	text-align: center;
+	float: left;
+}
+
+.text-right {
+	text-align: right;
+	margin-right: 3%;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.searchSection {
+	width: 40%;
+	text-align: center;
+	margin-bottom: 5%;
+	float: left;
+	border: 1px solid #ccc!important;
+	border-radius: 50px;
+	margin: 5%;
+	padding: 2%;
+}
+
+.searchSection input, .searchSection button {
+	width: 90%;
+	margin: 5%;
+	border-radius: 5px;
+}
+
+.searchSection input {
+	height: 50px;
+	padding: 5%;
+}
+
+.searchSection button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.text-red {
+	color: lightcoral;
+}
+
+.text-green {
+	color: lightgreen;
+}
+
+.text-blue {
+	color: lightblue;
+}
+
+.text-yellow {
+	color: lightyellow;
+}
+
+.text-grey {
+	color: lightgrey;
+}
+
+.container {
+	width: 100%;
+	border-radius: 25px;
+	-webkit-box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
+	        box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
+	background-color: #222831;
+	color: #ffffff;
+}
+
+.footerSection {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	width: 100%;
+	text-align: center;
+	float: left;
+}

@@ -1,0 +1,62 @@
+<!--
+ * File: index.html
+ * 
+ * Author: Critina Hueso Corpas
+ * 
+ * Date: 11/01/2021
+ * 
+ * Description: html file where I define the tags to create the page
+-->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Weather App Web</title>
+        <META name="Author" lang="es" content="Cristina Hueso">
+        <LINK rel="stylesheet" type="text/css" href="src/css/style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script type="text/javascript" src="src/js/index.js"></script>
+        <script type="text/javascript" src="src/js/weatherApi.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="titleSection"><h1>Weather App Web</h1></div>
+            <div class="weather-today">
+                <div class="weather-today-details">
+                    <small>Today</small><vr/>
+                    <span id="todayName"></span>
+                    <span class="date-day" id="todayDay"></span>
+                    <h1 id="temp">29&deg;F</h1>
+                    <span id="location">
+                        <i class="material-icons">location_on</i>
+                        Madrid | ES
+                    </span>
+                    <h3 id="weatherShortDescription"></h3>
+                    <h3 id="weatherDescription"></h3>
+                    <div>
+                        <small class="text-red" id="highTemp">Highs: 290.83F</small>
+                        <small class="text-green"id="minTemp">Lows: 286.6</small>
+                    </div>
+                    <div>
+                        <small class="text-blue" id="humidity">Humidity:</small>
+                        <small id="wind">Wind:</small>
+                    </div>
+                    <div>
+                        <small id="pressure">Pressure:</small>
+                    </div>
+                </div>
+                <div class="searchSection">
+                    <h3>Check Other City:</h3>
+                    <input id="cityValInput" type="text" value="Madrid"/>
+                    <button id="searchBtn" onclick="searchCity()">Search</button>
+                </div>
+            <div class="footerSection">
+                <span><small>Develop by <a href="https://www.cristinahueso.com">Cristina Hueso</a></small></span>
+            </div>
+        </div>
+    </body>
+</html>
